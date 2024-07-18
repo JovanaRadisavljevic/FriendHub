@@ -30,7 +30,7 @@ export default function Post() {
                 <span className="postLikeCounter">32 ljudi je lajkovalo ovaj post</span>
                 </div>
                 <div className="postBottomRight">
-                    <span className="postCommentText">9 komenatara</span>
+                    <span className="postCommentText">9 komentara</span>
                 </div>
             </div>
         </div>

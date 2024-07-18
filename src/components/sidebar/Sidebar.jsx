@@ -17,11 +17,11 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             <PlayCircleFilledOutlined className="sidebarIcon" />
-            <span className="sidebarListItemText">Videos</span>
+            <span className="sidebarListItemText">Videi</span>
           </li>
           <li className="sidebarListItem">
             <Group className="sidebarIcon" />
-            <span className="sidebarListItemText">Groups</span>
+            <span className="sidebarListItemText">Grupe</span>
           </li>
           <li className="sidebarListItem">
             <Bookmark className="sidebarIcon" />
@@ -29,19 +29,19 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             <HelpOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Questions</span>
+            <span className="sidebarListItemText">Pitanja</span>
           </li>
           <li className="sidebarListItem">
             <WorkOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Jobs</span>
+            <span className="sidebarListItemText">Poslovi</span>
           </li>
           <li className="sidebarListItem">
             <Event className="sidebarIcon" />
-            <span className="sidebarListItemText">Events</span>
+            <span className="sidebarListItemText">Dogadjaji</span>
           </li>
           <li className="sidebarListItem">
             <School className="sidebarIcon" />
-            <span className="sidebarListItemText">Courses</span>
+            <span className="sidebarListItemText">Kursevi</span>
           </li>
         </ul>
         <button className='sidebarButton'>Prikazi jos</button>
