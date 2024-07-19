@@ -1,6 +1,8 @@
 import React from 'react'
 import "./sidebar.css"
 import {RssFeed,Event,Chat,School,PlayCircleFilledOutlined,WorkOutline,Group,Bookmark,HelpOutline} from "@mui/icons-material"
+import { Users } from '../../Data'
+import CloseFrined from '../closeFrineds/CloseFrined'
 
 export default function Sidebar() {
   return (
@@ -47,30 +49,9 @@ export default function Sidebar() {
         <button className='sidebarButton'>Prikazi jos</button>
         <hr className='sidebarHr'/>
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img className='sidebarFriendImg' src="/assets/person/2.jpeg" alt="" />
-            <span className="sidebarFrinedName">Marijan Marijanovic</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className='sidebarFriendImg' src="/assets/person/2.jpeg" alt="" />
-            <span className="sidebarFrinedName">Marijan Marijanovic</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className='sidebarFriendImg' src="/assets/person/2.jpeg" alt="" />
-            <span className="sidebarFrinedName">Marijan Marijanovic</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className='sidebarFriendImg' src="/assets/person/2.jpeg" alt="" />
-            <span className="sidebarFrinedName">Marijan Marijanovic</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className='sidebarFriendImg' src="/assets/person/2.jpeg" alt="" />
-            <span className="sidebarFrinedName">Marijan Marijanovic</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className='sidebarFriendImg' src="/assets/person/2.jpeg" alt="" />
-            <span className="sidebarFrinedName">Marijan Marijanovic</span>
-          </li>
+          {Users.map(u => (
+            <CloseFrined key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>

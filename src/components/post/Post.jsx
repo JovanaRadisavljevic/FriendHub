@@ -4,7 +4,7 @@ import { MoreVert } from "@mui/icons-material"
 import { Users } from '../../Data'
 
 export default function Post({post}) {
-    const user = Users.filter(u=>u.id===1)
+
   return (
     <div className='post'>
         <div className="postWrapper">
@@ -32,7 +32,7 @@ export default function Post({post}) {
                 <span className="postLikeCounter">{post.like} ljudi je lajkovalo ovaj post</span>
                 </div>
                 <div className="postBottomRight">
-                    <span className="postCommentText">{post.comment}</span>
+                    <span className="postCommentText">{post.comment} komentara</span>
                 </div>
             </div>
         </div>
