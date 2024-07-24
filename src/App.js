@@ -1,10 +1,10 @@
-import Profile from "./pages/profile/Profile";
+import Home from "./pages/home/Home";
 
 //aplikacija se pokrece komandom: npm start
 function App() {
   return (
     <>
-    <Profile />
+    <Home />
     </>
     
   )
