@@ -57,6 +57,7 @@
   
   .loginButton{
       height: 50px;
+      width: 100%;
       border-radius: 10px;
       border: none;
       background-color: #1775ee;
@@ -81,3 +82,8 @@
     font-weight: 500;
     cursor: pointer;
   }
+  .loginLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

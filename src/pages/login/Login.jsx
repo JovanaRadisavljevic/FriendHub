@@ -1,5 +1,6 @@
 import React from 'react'
 import './login.css'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -13,9 +14,13 @@ export default function Login() {
             <div className="loginBox">
                 <input placeholder="Email" className="loginInput" />
                 <input placeholder="Password" className="loginInput" />
+                <Link to='/home' className='loginLink '>
                 <button className="loginButton">Log In</button>
+                </Link>
                 <span className="loginForgot">Zaboravili ste šifru?</span>
-                <button className="loginRegisterButton">Napravite nov nalog</button>
+                <Link to='/register' className='loginLink'>
+                  <button className="loginRegisterButton">Napravite nov nalog</button>
+                </Link>
             </div>
         </div>
       </div>

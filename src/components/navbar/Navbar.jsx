@@ -1,12 +1,15 @@
 import React from 'react'
 import "./navbar.css"
+import { Link } from 'react-router-dom'
 import { Search, Person, Chat, Notifications } from "@mui/icons-material"
 
 export default function Navbar() {
   return (
     <div className='navbarContainer'>
       <div className="navbarLeft">
+        <Link to='/home' style={{ textDecoration: 'none'}}>
         <span className="logo">FriendHub</span>
+        </Link>
       </div>
       <div className="navbarCenter">
         <div className="searchbar">
@@ -33,7 +36,9 @@ export default function Navbar() {
                 <span className="navbarIconBadge"> 1 </span>
             </div>
         </div>
+        <Link to='/profile'>
         <img src="../../../assets/person/1.jpeg" alt="" className="navbarImg" />
+        </Link>
       </div>
     </div>
   )
